@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      table,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Game of Life</h1>
+    <div class="bts">
+      <button class="start" onclick="startGame()">Start</button>
+      <button class="stop" onclick="stopGame()">Stop</button>
+    </div>
+    <div class="bts">
+      <button onclick="random()">Random position</button>
+      <button onclick="goGlaid()">Go glaid</button>
+
+      <button onclick="clearBoard()">Clear Board</button>
+    </div>
+    <div class="pole"><table id="gameBoard"></table></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

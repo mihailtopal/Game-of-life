@@ -1,0 +1,136 @@
+button {
+  padding: 5px;
+  margin: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 5px;
+  border-radius: 0.3em;
+  border: none;
+  background-color: rgb(177, 176, 176);
+  color: black;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(210, 210, 210);
+}
+button:active {
+  background-color: black;
+  color: whitesmoke;
+}
+h1 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  font-size: 48px;
+}
+.pole {
+  max-height: 90%;
+}
+.bts {
+  display: flex;
+  padding: auto;
+  margin: auto;
+  justify-content: center;
+}
+button.start {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+button.stop {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+.start {
+  background-color: #009a63;
+  color: whitesmoke;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+.start:hover {
+  background-color: #71bc78;
+}
+.stop {
+  background-color: #ff6347;
+  color: whitesmoke;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+.stop:hover {
+  background-color: #ff7a5c;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Это может быть нужно, чтобы избежать скроллинга страницы */
+  max-width: 100%;
+  max-height: 90%;
+}
+#gameBoard {
+  position: relative;
+  padding: 10px;
+  border: none;
+  padding-bottom: 300px;
+  max-height: 100%;
+  margin-top: 15px;
+}
+table {
+  display: block;
+  border: none;
+}
+
+tr {
+  width: 20px;
+  height: 20px;
+}
+td {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+}
+
+td.dead {
+  background-color: rgb(0 0 0 / 29%);
+
+  border-radius: 30%;
+  border: none;
+}
+
+td.alive {
+  background-color: green;
+  border-radius: 30%;
+  border: none;
+}
